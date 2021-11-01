@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Formulir PPDB Jalur Zonasi Tahun 2021</title>
+  </head>
+  <body>
+    <h2 style="text-align: justify; text-indent: 0.5in">Formulir PPDB Jalur Zonasi Tahun 2021</h2>
+    <form action="proses.php" method="post" name="fPPDB">
+      <table border="1">
+        <tr>
+          <th>Nomor</th>
+          <th style="text-align: left" colspan="3">Info Pendaftaran</th>
+        </tr>
+        <tr>
+          <td style="text-align: center">1</td>
+          <td><label for="fNISN">NISN</label></td>
+          <td colspan="2"><input type="text" id="fNISN" name="fNISN" /></td>
+        </tr>
+        <tr>
+          <td style="text-align: center">2</td>
+          <td><label for="fAsalSekolah">Asal Sekolah</label></td>
+          <td colspan="2"><input type="text" id="fAsalSekolah" name="fAsalSekolah" /></td>
+        </tr>
+        <tr>
+          <td style="text-align: center">3</td>
+          <td><label for="fTahunLulus">Tahun Lulus</label></td>
+          <td><input type="number" id="fTahunLulus" name="fTahunLulus" /></td>
+          <td><label for="myfile">(lampirkan foto copy ijazah)</label><input type="file" id="myfile" name="myfile" /></td>
+        </tr>
+        <tr>
+          <th colspan="4"><p style="text-align: left">Data Calon Peserta</p></th>
+        </tr>
+        <tr>
+          <td style="text-align: center">6</td>
+          <td><label for="fNama">Nama Lengkap</label></td>
+          <td colspan="2"><input type="text" id="fNama" name="fNama" /></td>
+        </tr>
+        <tr>
+          <td style="text-align: center">7</td>
+          <td><label for="fNIK">NIK</label></td>
+          <td colspan="2"><input type="text" id="fNIK" name="fNIK" /></td>
+        </tr>
+        <tr>
+          <td style="text-align: center">8</td>
+          <td><label for="fTTL">Tempat/Tanggal Lahir</label></td>
+          <td colspan="2"><input type="text" id="fTTL" name="fTTL" /> <input type="date" id="fTTL" name="fTTL" /></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><label for="fileAkte">Foto Copy Akte Kelahiran Yang Telah Dilegalisir(Di Lampirkan)</label></td>
+          <td colspan="2"><input type="file" id="fileAkte" name="fileAkte" /></td>
+        </tr>
+        <tr>
+          <td style="text-align: center">9</td>
+          <td><label for="fJenisKelamin">Jenis Kelamin</label></td>
+          <td colspan="2">
+            <input type="radio" id="Laki-laki" name="fJenisKelamin" value="Laki-laki" />
+            <label for="Laki-laki">Laki-laki</label>
+            <input type="radio" id="Wanita" name="fJenisKelamin" value="Wanita" />
+            <label for="Wanita">Wanita</label>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: center">10</td>
+          <td><label for="fAlamat">Alamat</label></td>
+          <td colspan="2"><textarea name="fAlamat" id="fAlamat" cols="42" rows="3.5"></textarea></td>
+        </tr>
+        <tr>
+          <td style="text-align: center">11</td>
+          <td style="text-align: justify; text-indent: 3in"><label for="fDesa">Desa/Kel.</label></td>
+          <td colspan="2"><input type="text" id="fDesa" name="fDesa" /></td>
+        </tr>
+        <tr>
+          <td style="text-align: center">12</td>
+          <td style="text-align: justify; text-indent: 3in"><label for="fKecamatan">Kecamatan</label></td>
+          <td colspan="2"><input type="text" id="fKecamatan" name="fKecamatan" /></td>
+        </tr>
+        <tr>
+          <td style="text-align: center">13</td>
+          <td style="text-align: justify; text-indent: 3in"><label for="fKabupaten">Kabupaten</label></td>
+          <td colspan="2"><input type="text" id="fKabupaten" name="fKabupaten" /></td>
+        </tr>
+        <tr>
+          <td style="text-align: center">14</td>
+          <td style="text-align: justify; text-indent: 3in"><label for="fProvinsi">Provinsi</label></td>
+          <td colspan="2"><input type="text" id="fProvinsi" name="fProvinsi" /></td>
+        </tr>
+        <tr>
+          <td style="text-align: center">15</td>
+          <td><label for="fEmail">Email Aktif</label></td>
+          <td colspan="2"><input type="email" id="fEmail" name="fEmail" /></td>
+        </tr>
+        <tr>
+          <th colspan="4" style="text-align: left">
+            Data Orang Tua
+            <label for="fileOrtu">(lampirkan KK)</label>
+            <input type="file" id="fileOrtu" name="fileOrtu" />
+          </th>
+        </tr>
+        <tr>
+          <td style="text-align: center">16</td>
+          <td><label for="fNomorKK">Nomor Kartu Keluarga</label></td>
+          <td colspan="2"><input type="text" id="fNomorKK" name="fNomorKK" /></td>
+        </tr>
+        <tr>
+          <td style="text-align: center">17</td>
+          <td><label for="fNamaAyah">Nama Ayah Kandung</label></td>
+          <td colspan="2"><input type="text" id="fNamaAyah" name="fNamaAyah" /></td>
+        </tr>
+        <tr>
+          <td style="text-align: center">18</td>
+          <td><label for="fAgamaAyah">Agama</label></td>
+          <td colspan="2">
+            <select name="fAgamaAyah" id="fAgamaAyah">
+              <option value="...">....</option>
+              <option value="Islam">Islam</option>
+              <option value="Kristen">Kristen</option>
+              <option value="Katolik">Katolik</option>
+              <option value="Hindu">Hindu</option>
+              <option value="Buddha">Buddha</option>
+              <option value="Konghucu">Konghucu</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: center">19</td>
+          <td><label for="fPekerjaanAyah">Pekerjaan</label></td>
+          <td colspan="2"><input type="text" id="fPekerjaanAyah" name="fPekerjaaanAyah" /></td>
+        </tr>
+        <tr>
+          <td style="text-align: center">20</td>
+          <td><label for="fNamaIbu">Nama Ibu Kandung</label></td>
+          <td colspan="2"><input type="text" id="fNamaIbu" name="fNamaIbu" /></td>
+        </tr>
+        <tr>
+          <td style="text-align: center">21</td>
+          <td><label for="fAgamaIbu">Agama</label></td>
+          <td colspan="2">
+            <select name="fAgamaIbu" id="fAgamaIbu">
+              <option value="...">....</option>
+              <option value="Islam">Islam</option>
+              <option value="Kristen">Kristen</option>
+              <option value="Katolik">Katolik</option>
+              <option value="Hindu">Hindu</option>
+              <option value="Buddha">Buddha</option>
+              <option value="Konghucu">Konghucu</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: center">22</td>
+          <td><label for="fPekerjaanIbu">Pekerjaan</label></td>
+          <td colspan="2"><input type="text" id="fPekerjaanIbu" name="fPekerjaaanIbu" /></td>
+        </tr>
+        <tr>
+          <td style="text-align: center">23</td>
+          <td><label for="fAlamatOrtu">Alamat Orang Tua</label></td>
+          <td colspan="2"><textarea name="fAlamatOrtu" id="fAlamatOrtu" cols="42" rows="3.5"></textarea></td>
+        </tr>
+        <tr>
+          <td style="text-align: center">24</td>
+          <td style="text-align: justify; text-indent: 3in"><label for="fDesa">Desa/Kel.</label></td>
+          <td colspan="2"><input type="text" id="fDesaOrtu" name="fDesaOrtu" /></td>
+        </tr>
+        <tr>
+          <td style="text-align: center">25</td>
+          <td style="text-align: justify; text-indent: 3in"><label for="fKecamatan">Kecamatan</label></td>
+          <td colspan="2"><input type="text" id="fKecamatanOrtu" name="fKecamatanOrtu" /></td>
+        </tr>
+        <tr>
+          <td style="text-align: center">26</td>
+          <td style="text-align: justify; text-indent: 3in"><label for="fKabupaten">Kabupaten</label></td>
+          <td colspan="2"><input type="text" id="fKabupatenOrtu" name="fKabupatenOrtu" /></td>
+        </tr>
+        <tr>
+          <td style="text-align: center">27</td>
+          <td style="text-align: justify; text-indent: 3in"><label for="fProvinsi">Provinsi</label></td>
+          <td colspan="2"><input type="text" id="fProvinsiOrtu" name="fProvinsiOrtu" /></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan Membuat Form</title>
+  </head>
+  <body>
+    <h2>Latihan Membuat Form</h2>
+    <form action="proses.php" method="post" name="fLatihan" autocomplete="on">
+      <table>
+        <tr>
+          <td>
+            <label for="fNama">Nama</label>
+          </td>
+          <td>
+            <input type="text" id="fNama" name="fNama" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="fNIM">NIM</label>
+          </td>
+          <td>
+            <input type="text" id="fNIM" name="fNIM" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="fTanggal">Tanggal Lahir</label>
+          </td>
+          <td>
+            <input type="date" id="fTanggal" name="fTanggal" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="fAlamat">Alamat</label>
+          </td>
+          <td>
+            <textarea name="fAlamat" id="fAlamat" cols="30" rows="5"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="fMobil"> Pilih Mobil Favoritmu</label>
+          </td>
+          <td>
+            <input type="radio" id="BMW" name="fMobil" value="BMW" />
+            <label for="BMW"> BMW </label>
+            <input type="radio" id="Tesla" name="fMobil" value="Tesla" />
+            <label for="Tesla"> Tesla </label>
+            <input type="radio" id="Audi" name="fMobil" value="Audi" />
+            <label for="Audi"> Audi </label>
+            <input type="radio" id="Hyundai" name="fMobil" value="Hyundai" />
+            <label for="Hyundai"> Hyundai </label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="fHP"> Pilih Smartphone </label>
+          </td>
+          <td>
+            <select name="fHP" id="fHP">
+              <option value="Redmi">Redmi</option>
+              <option value="Oppo">Oppo</option>
+              <option value="Samsung">Samsung</option>
+              <option value="iPhone">iPhone</option>
+              <option value="Asus">Asus</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="myfile">Masukan Lampiran</label>
+          </td>
+          <td>
+            <input type="file" id="myfile" name="myfile" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="submit" name="fSubmit" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
