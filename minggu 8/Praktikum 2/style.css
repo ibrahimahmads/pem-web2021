@@ -1,0 +1,20 @@
+/* ini merupakan eksternal css */
+/* cara menggunakan dapat menggunakan tag <link> dan tulis didalam head */
+/* <link rel="stylesheet" type="text/css" href="style-ku.css"> */
+/* Atau menggunakan @import */
+/* <style type="text/css">
+@import "style-ku.css";
+</style>  */
+p {
+    font-family: serif;
+    line-height: 1.75em;
+}
+i {
+    font-family: sans;
+    color: orange;
+}
+h2 {
+    font-family: sans;
+    color: #333;
+}
+
