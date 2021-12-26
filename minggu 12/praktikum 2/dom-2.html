@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM API Javascript</title>
+</head>
+<body>
+    <p class="paragraf">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora fugiat eligendi saepe quibusdam! Veritatis ad nam laborum eaque voluptatum, nostrum veniam, praesentium qui animi tempora illo sint cupiditate delectus!</p>
+    <p class="paragraf">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora fugiat eligendi saepe quibusdam! Veritatis ad nam laborum eaque voluptatum, nostrum veniam, praesentium qui animi tempora illo sint cupiditate delectus!</p>
+    <p class="paragraf">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora fugiat eligendi saepe quibusdam! Veritatis ad nam laborum eaque voluptatum, nostrum veniam, praesentium qui animi tempora illo sint cupiditate delectus!</p>
+
+    <script>
+        var paragraf = document.getElementsByClassName("paragraf");
+        console.log(paragraf);
+
+        paragraf[0].style.color = "green";
+        paragraf[1].style.margin = "10px";
+        paragraf[1].style.color = "gold";
+        paragraf[2].style.padding = "10px";
+        paragraf[2].style.color = "mediumblue";
+
+    </script>
+</body>
+</html>
