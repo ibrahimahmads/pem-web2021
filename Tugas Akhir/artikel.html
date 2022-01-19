@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <title>Artikel</title>
+
+    <style>
+      .navLink:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid aquamarine;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+      }
+      .jamku {
+        text-align: right;
+        margin-right: 35px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body class="bg-info">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Inside Game</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <div class="navbar-nav">
+            <a class="nav-link active navLink" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link navLink" href="#">Artikel</a>
+            <a class="nav-link navLink" href="forum.html">Forum</a>
+          </div>
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Lainnya </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="about.html">About</a></li>
+                <li><a class="dropdown-item" href="#">Top Up</a></li>
+                <li><a class="dropdown-item" href="#">Tournament</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div id="jam_digital" class="jamku"></div>
+      </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <!-- Artikel -->
+    <div class="container-fluid pb-3 pt-5 artikel">
+      <div class="row text-center mb-3">
+        <div class="col">
+          <h2 class="pt-2">Artikel</h2>
+          <p>Temukan artikel menarik tentang game favoritmu</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="card" style="width: 18rem">
+            <img src="media/artikel/hanabiSkin.jpg" class="card-img-top" alt="Skin Colector Hanabi" />
+            <div class="card-body">
+              <h5 class="card-title">Skin Colector Hanabi</h5>
+              <p class="card-text">Skin baru untuk hero hanabi akan hadir mulai tanggal 6 Januari 2022. Siapkah Diamond Anda?</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card" style="width: 18rem">
+            <img src="media/artikel/GoW-artikel.jpg" class="card-img-top" alt="God of War Ragnarök" />
+            <div class="card-body">
+              <h5 class="card-title">God of War Ragnarök</h5>
+              <p class="card-text">Siapkah anda dengan seri lanjutan dari game God of War yang akan rilis Januari ini!!</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card" style="width: 18rem">
+            <img src="media/artikel/yae.jpeg" class="card-img-top" alt="Karakter Baru" />
+            <div class="card-body">
+              <h5 class="card-title">Karakter baru Genshin Impact</h5>
+              <p class="card-text">Siapakah dia yang katanya akan hadir?</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card" style="width: 18rem">
+            <img src="media/artikel/GiUpdate.jpeg" class="card-img-top" alt="Ganyu" />
+            <div class="card-body">
+              <h5 class="card-title">Genshin Impact Update Version 2.4</h5>
+              <p class="card-text">Apa sajakah update konten yang akan hadir pada Genshin Impact V 2.4?</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Artikel -->
+
+    <!-- Footer -->
+    <footer class="bg-primary text-center text-white pb-2 fixed-bottom">
+      <p>Copyright by <a href="https://www.instagram.com/ibrahim.ahmd_/" class="text-white fw-bold text-decoration-none">Inside Game</a></p>
+    </footer>
+    <!-- Akhir Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+      function showtime() {
+        var date = new Date();
+        var tgl = new Date(date.getTime());
+        var jam = date.getHours();
+        var menit = date.getMinutes();
+        var detik = date.getSeconds();
+        var kata = 'waktu :';
+
+        var time = kata + ' ' + (jam.length == 1 ? '0' + jam : jam) + ' : ' + (menit.length == 1 ? '0' + menit : menit) + ' : ' + (detik.length == 1 ? '0' + detik : detik);
+        document.getElementById('jam_digital').innerHTML = time;
+
+        setTimeout(showtime, 1000);
+      }
+
+      showtime();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <title>Artikel</title>
+
+    <style>
+      .navLink:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid aquamarine;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+      }
+      .jamku {
+        text-align: right;
+        margin-right: 35px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body class="bg-info">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Inside Game</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <div class="navbar-nav">
+            <a class="nav-link active navLink" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link navLink" href="artikel.html">Artikel</a>
+            <a class="nav-link navLink" href="#">Forum</a>
+          </div>
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Lainnya </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="about.html">About</a></li>
+                <li><a class="dropdown-item" href="#">Top Up</a></li>
+                <li><a class="dropdown-item" href="#">Tournament</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div id="jam_digital" class="jamku"></div>
+      </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <!-- Forum -->
+    <div class="container-fluid">
+      <div class="row text-center mb-4 mt-5 pt-3">
+        <div class="col">
+          <h2 class="pt-2">Forum</h2>
+          <p>Temukan pengalaman bermain game yang menyenangkan dengan bergabung ke forum dan temukan teman bermain game</p>
+        </div>
+      </div>
+      <div class="row mb-5 pb-5">
+        <div class="col-sm-3 mb-5">
+          <div class="card text-center" style="width: 18rem">
+            <img src="media/icon/iconGI.png" class="card-img-top" alt="Genshin Impact" />
+            <div class="card-body">
+              <h5 class="card-title">Genshin Impact</h5>
+              <a href="#" class="btn btn-primary">Bergabung</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card text-center" style="width: 18rem">
+            <img src="media/icon/iconPUBG.jpg" class="card-img-top" alt="PUBG" />
+            <div class="card-body">
+              <h5 class="card-title">PUBG</h5>
+              <a href="#" class="btn btn-primary">Bergabung</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card text-center" style="width: 18rem">
+            <img src="media/icon/iconDOTA.png" class="card-img-top" alt="DOTA 2" />
+            <div class="card-body">
+              <h5 class="card-title">DOTA 2</h5>
+              <a href="#" class="btn btn-primary">Bergabung</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card text-center" style="width: 18rem">
+            <img src="media/icon/iconML.jpg" class="card-img-top" alt="Mobile Legend" />
+            <div class="card-body">
+              <h5 class="card-title">Mobile Legend</h5>
+              <a href="#" class="btn btn-primary">Bergabung</a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="card text-center" style="width: 18rem">
+              <img src="media/icon/iconBA.webp" class="card-img-top" alt="Blue Archive" />
+              <div class="card-body">
+                <h5 class="card-title">Blue Archive</h5>
+                <a href="#" class="btn btn-primary">Bergabung</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card text-center" style="width: 18rem">
+              <img src="media/icon/iconFF.jpg" class="card-img-top" alt="Free Fire" />
+              <div class="card-body">
+                <h5 class="card-title">Free Fire</h5>
+                <a href="#" class="btn btn-primary">Bergabung</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card text-center" style="width: 18rem">
+              <img src="media/icon/iconPokemon.jpg" class="card-img-top" alt="Pokemon Unite" />
+              <div class="card-body">
+                <h5 class="card-title">Pokemon Unite</h5>
+                <a href="#" class="btn btn-primary">Bergabung</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card text-center" style="width: 18rem">
+              <img src="media/icon/iconPES.png" class="card-img-top" alt="PES" />
+              <div class="card-body">
+                <h5 class="card-title">PES</h5>
+                <a href="#" class="btn btn-primary">Bergabung</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Forum -->
+
+    <!-- Footer -->
+    <footer class="bg-primary text-center text-white pb-2 fixed-bottom">
+      <p>Copyright by <a href="https://www.instagram.com/ibrahim.ahmd_/" class="text-white fw-bold text-decoration-none">Inside Game</a></p>
+    </footer>
+    <!-- Akhir Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+      function showtime() {
+        var date = new Date();
+        var tgl = new Date(date.getTime());
+        var jam = date.getHours();
+        var menit = date.getMinutes();
+        var detik = date.getSeconds();
+        var kata = 'waktu :';
+
+        var time = kata + ' ' + (jam.length == 1 ? '0' + jam : jam) + ' : ' + (menit.length == 1 ? '0' + menit : menit) + ' : ' + (detik.length == 1 ? '0' + detik : detik);
+        document.getElementById('jam_digital').innerHTML = time;
+
+        setTimeout(showtime, 1000);
+      }
+
+      showtime();
+    </script>
+  </body>
+</html>
